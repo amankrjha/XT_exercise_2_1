@@ -1,0 +1,80 @@
+/*
+This CSS file has component related styling
+*/
+.m_logo{
+	border-right: 1px solid lightgray;
+	text-transform: lowercase;
+	color: #444;
+	padding-left: 15px;
+	font-weight: 900;
+	font-size: 2.5rem;
+	letter-spacing: 1px;
+	margin: 0px 0px;
+	padding-right: 20px; 
+}
+.m_nav_a{
+	color: #444;
+	font-weight: 700;
+	font-size: 13px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.m_nav_a:hover{
+	text-decoration: underline;
+}
+.setBackground{
+	background-color: #f9f9f9;
+}
+.m_hero_pic{
+	width: 100%;
+}
+.m_subtitle{
+	color: #444;
+	font-weight: 300;
+}
+.m_big_subtitle{
+	color: #777;
+	font-size: 20px;
+}
+.m_numbers{
+	color: #1abc9c;
+    font-size: 2.5rem;
+    font-weight: 900;
+    padding: 0rem .5rem;
+}
+.m_learnmore{
+	color: #1abc9c;
+}
+.m_pie_chart{
+	width: 100%;
+	padding:10px;
+	margin-top: 30px;
+}
+.m_card{
+	border-bottom: .3rem solid #444;
+    border-radius: 0 0 3rem 3rem;
+    padding-bottom: 20px;
+}
+.m_card_image{
+	border-radius: 3rem 3rem 0rem 0rem;
+}
+.m_heading_block{
+	margin: 30px 0px;
+}
+
+.m_heading_block:after{
+	content: '';
+    display: block;
+    margin: 30px 0px;
+    width: 40px;
+    border-top: 2px solid #444;
+}
+
+@media (min-width: 768px) {
+	.flex-md-section-27{
+		width: 27%;
+	}
+	.m_hero_pic{
+		width: 70%;
+	}
+}

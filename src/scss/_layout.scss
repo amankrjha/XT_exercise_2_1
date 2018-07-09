@@ -1,0 +1,20 @@
+/*
+This file only layout related CSS
+*/
+
+.l_md_fourty_pc{
+	width: 100%;
+}
+.l_md_sixty_pc{
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+
+	.l_md_fourty_pc{
+		width: 40%;
+	}
+	.l_md_sixty_pc{
+		width: 60%;
+	}
+}

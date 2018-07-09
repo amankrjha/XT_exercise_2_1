@@ -1,0 +1,34 @@
+/*
+This Style sheet is setting chainging HTML element styles
+*/
+body{
+	margin: 10px;
+	font-family: sans-serif;
+}
+
+h2{
+	color: #333;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+	padding: 15px;
+	display: inline;
+}
+ul{
+	padding: 0px;
+}
+nav{
+	background-color: white;
+}
+section{
+	padding: 0.5rem;
+	background-color: white;
+}
+aside{
+	padding: 0.5rem;
+}
