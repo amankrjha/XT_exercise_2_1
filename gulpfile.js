@@ -17,5 +17,5 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('default', ['sass', 'browser-sync'], function () {  
-    gulp.watch("src/scss/*.scss", ['sass']);
+    gulp.watch(["src/scss/*.scss", "src/*.html"],  ['sass']);
 });
