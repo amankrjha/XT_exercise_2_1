@@ -6287,7 +6287,8 @@ This Style sheet is setting chainging HTML element styles
 */
 body {
   margin: 10px;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  position: relative; }
 
 h2 {
   color: #333;
@@ -6344,6 +6345,9 @@ This CSS file has component related styling
   margin: 0px 0px;
   padding-right: 20px; }
 
+.m_logo:hover {
+  color: #444; }
+
 .m_nav_a {
   color: #444;
   font-weight: 700;
@@ -6352,10 +6356,11 @@ This CSS file has component related styling
   text-transform: uppercase; }
 
 .m_nav_a:hover {
+  color: #444;
   text-decoration: underline; }
 
 .setBackground {
-  background-color: #f9f9f9; }
+  background-color: #ECF0F1; }
 
 .m_hero_pic {
   width: 100%; }
@@ -6369,13 +6374,18 @@ This CSS file has component related styling
   font-size: 20px; }
 
 .m_numbers {
-  color: #1abc9c;
+  color: #005500;
   font-size: 2.5rem;
   font-weight: 900;
   padding: 0rem .5rem; }
 
 .m_learnmore {
-  color: #1abc9c; }
+  color: #005500;
+  font-weight: bold; }
+
+.m_learnmore:hover {
+  color: #005500;
+  text-decoration: underline; }
 
 .m_pie_chart {
   width: 100%;

@@ -8,6 +8,15 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('src/css'));
 });
 
+gulp.task('copy', function () {
+    gulp.src('./node_modules/bootstrap/dist/js/bootstrap.js')
+        .pipe(gulp.dest('./src/js/'));
+    gulp.src('./node_modules/jquery/dist/jquery.js')
+        .pipe(gulp.dest('./src/js/'));
+    gulp.src('./node_modules/popper.js/dist/popper.js')
+        .pipe(gulp.dest('./src/js/'));
+});
+
 gulp.task('browser-sync', function() {  
     browserSync.init(["src/css/*.css", "src/js/*.js"], {
         server: {
@@ -16,6 +25,6 @@ gulp.task('browser-sync', function() {
     });
 });
 
-gulp.task('default', ['sass', 'browser-sync'], function () {  
+gulp.task('default', ['copy', 'sass', 'browser-sync'], function () {  
     gulp.watch(["src/scss/*.scss", "src/*.html"],  ['sass']);
 });

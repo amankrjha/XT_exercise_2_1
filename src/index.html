@@ -9,7 +9,7 @@
     <title>Draw your business in Digital Canvas</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top justify-content-between setBackground">
+    <nav  id="navbar_id" class="navbar navbar-expand-lg sticky-top justify-content-between setBackground">
 	  <a class="navbar-brand m_logo" href="#">Canvas</a>
 	  <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -17,130 +17,137 @@
 	  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 	    <ul class="navbar-nav">
 	      <li class="nav-item">
-	        <a class="nav-link m_nav_a" href="#">Home</a>
+	        <a class="nav-link m_nav_a" href="">Home</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link m_nav_a" href="#">Features</a>
+	        <a class="nav-link m_nav_a" href="#offerings">Products</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link m_nav_a" href="#">Pages</a>
+	        <a class="nav-link m_nav_a" href="">Analytic</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link m_nav_a" href="#">Blog</a>
+	        <a class="nav-link m_nav_a" href="#connect">Connect</a>
 	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link m_nav_a" href="#">Shop</a>
-	      </li>
+	      <li class="nav-item dropdown">
+    		<a class="nav-link dropdown-toggle m_nav_a" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
+		    <div class="dropdown-menu setBackground">
+		      <a class="nav-link m_nav_a" href="#">Service</a>
+		      <a class="nav-link m_nav_a" href="#">Consultation</a>
+		      <a class="nav-link m_nav_a" href="#">Brandings</a>
+		    </div>
+  		  </li>
 	      <li class="nav-item">
 	        <a class="nav-link m_nav_a" href="#">Shortcodes</a>
 	      </li>
 	    </ul>
 	  </div>
 	</nav>
-	<div class="container mt-5">
-		<div class="card-deck">
-		  <div class="card border-top-0 border-right-0 border-left-0 m_card">
-		    <img class="card-img-top m_card_image" src="img/1.jpg" alt="Our experties">
-		    <div class="card-body">
-		      <h5 class="card-title">Why choose us</h5>
-		      <p class="card-text m_subtitle">Because we are reliable</p>
-		      <p class="card-text">We are the Global leader in providing products and services to help accelerate the business.</p>
-		    </div>
-		  </div>
-		  <div class="card border-top-0 border-right-0 border-left-0 m_card">
-		    <img class="card-img-top m_card_image" src="img/2.jpg" alt="Mission">
-		    <div class="card-body">
-		      <h5 class="card-title">Our Mission</h5>
-		      <p class="card-text m_subtitle">To draw business in futuristic technology canvas</p>
-		      <p class="card-text">We have partnered and helped many organisation in their transition to futuristics technology.</p>
-		    </div>
-		  </div>
-		  <div class="card border-top-0 border-right-0 border-left-0 m_card">
-		    <img class="card-img-top m_card_image" src="img/3.jpg" alt="Our capabilities">
-		    <div class="card-body">
-		      <h5 class="card-title">What we do</h5>
-		      <p class="card-text m_subtitle">Make our customer happy</p>
-		      <p class="card-text">Our solutions have helped customer in achieving their milestones, reaching out to more customers and increasing their efficiancy.</p>
-		    </div>
-		  </div>
-		</div>
-	</div>
-	<div class="jumbotron mt-5 pb-5 d-flex flex-column justify-content-center setBackground">
-		<div class="m_heading_block align-self-center">
-			<h2>Easy configurable options</h2>
-			<p class="m_subtitle">Choose from wide array of options for your best matched customization</p>
-		</div>
-	
-		<img src="img/macbook.png" class="m_hero_pic align-self-center" alt="Analytic tools">
-
-		<div class="d-flex flex-column flex-md-row mt-5">
-			<span class="m_numbers">1.</span>
-			<section class="w-100 flex-md-section-27">
-				<h4>Choose Product</h4>
-				<p>
-					We have wide range of products to choose from. We have products for almost all verticals of business.
-					Our analytics tool helps business in gaining more insight about the business and improve efficiancy.
-				</p>
-				<p>
-					We can customize our tools to cater to your specific needs.
-				</p>
-			</section>
-			<span class="m_numbers">2.</span>
-			<section class="w-100 flex-md-section-27">
-				<h4>Enter shipping info</h4>
-				<p>
-					Enter your contact details and let us know if you need on-site demo. We can come and help you get started with tools.
-				</p>
-			</section>
-			<span class="m_numbers">3.</span>
-			<section class="w-100 flex-md-section-27">
-				<h4>Complete your payment</h4>
-				<p>
-					You can choose from multiple options for payments. If you are requesting for on-site demo, we have Cash on delivery option as well. 
-				</p>
-				<p>
-					There is additional cost for on-site demo and initial setup.
-				</p>
-			</section>
-		</div>
-	</div>
-	<div class="container mt-5 d-flex flex-column flex-md-row">
-		<div class="l_md_fourty_pc">
-			<img src="img/green.png" class="m_pie_chart" alt="Chart">
-		</div>
-		<aside class="l_md_sixty_pc">
-			<div class="m_heading_block">
-				<h2>POWERFUL INSIGHTS TO HELP GROW YOUR BUSINESS.</h2>
-				<p class="m_big_subtitle">Reports let you easily track and analyze your product sales, orders, and payments.</p>
+	<div data-spy="scroll" data-target="#navbar_id" data-offset="200">
+		<div class="container mt-5" id="home">
+			<div class="card-deck">
+			  <div class="card border-top-0 border-right-0 border-left-0 m_card">
+			    <img class="card-img-top m_card_image" src="img/1.jpg" alt="Our experties">
+			    <div class="card-body">
+			      <h5 class="card-title">Why choose us</h5>
+			      <p class="card-text m_subtitle">Because we are reliable</p>
+			      <p class="card-text">We are the Global leader in providing products and services to help accelerate the business.</p>
+			    </div>
+			  </div>
+			  <div class="card border-top-0 border-right-0 border-left-0 m_card">
+			    <img class="card-img-top m_card_image" src="img/2.jpg" alt="Mission">
+			    <div class="card-body">
+			      <h5 class="card-title">Our Mission</h5>
+			      <p class="card-text m_subtitle">To draw business in futuristic technology canvas</p>
+			      <p class="card-text">We have partnered and helped many organisation in their transition to futuristics technology.</p>
+			    </div>
+			  </div>
+			  <div class="card border-top-0 border-right-0 border-left-0 m_card">
+			    <img class="card-img-top m_card_image" src="img/3.jpg" alt="Our capabilities">
+			    <div class="card-body">
+			      <h5 class="card-title">What we do</h5>
+			      <p class="card-text m_subtitle">Make our customer happy</p>
+			      <p class="card-text">Our solutions have helped customer in achieving their milestones, reaching out to more customers and increasing their efficiancy.</p>
+			    </div>
+			  </div>
 			</div>
-			<p>
-				Today every business is driven by data. Business is capturing data about their production, operation, customer and sales channel to gain deeper insight about their business.
-			</p>
-			<p>
-				Our business analytics tool captures and process these data to help you track your business using simple intuitive and interactive charts. 
-			</p>
-			<p>
-				Our customer engagement analytic tools help Business understand their customer well and provide recommendation using AI to strenthen the engagement.
-			</p>
-			<a href="#" class="m_learnmore">Learn more -></a>
-		</aside>
-	</div>
-	<div class="container-fluid mt-5 pb-5 d-flex flex-column justify-content-center setBackground">
-		<div class="m_heading_block align-self-center">
-			<h2>Connect</h2>
-			<p class="m_big_subtitle">You can share your contact details and we will get in touch..</p>
 		</div>
-		<form class="form align-self-center">
-		  <div class="form-group mx-2 my-1 border">
-		    <label for="user_name" class="sr-only">Name</label>
-		    <input type="text" class="form-control-plaintext ml-3 font-weight-bold" id="user_name" value="Nick Jones">
-		  </div>
-		  <div class="form-group mx-2 my-1 border">
-		    <label for="user_email" class="sr-only">Email</label>
-		    <input type="text" class="form-control-plaintext ml-3 font-weight-bold" id="user_email" value="nick@eample.com">
-		  </div>
-		  <button type="submit" class="btn btn-primary mx-2 my-1">Send</button>
-		</form>
+		<div class="jumbotron mt-5 pb-5 d-flex flex-column justify-content-center setBackground" id="offerings">
+			<div class="m_heading_block align-self-center">
+				<h2>Easy configurable options</h2>
+				<p class="m_subtitle">Choose from wide array of options for your best matched customization</p>
+			</div>
+		
+			<img src="img/macbook.png" class="m_hero_pic align-self-center" alt="Analytic tools">
+
+			<div class="d-flex flex-column flex-md-row mt-5">
+				<span class="m_numbers">1.</span>
+				<section class="w-100 flex-md-section-27 rounded">
+					<h4>Choose Product</h4>
+					<p>
+						We have wide range of products to choose from. We have products for almost all verticals of business.
+						Our analytics tool helps business in gaining more insight about the business and improve efficiancy.
+					</p>
+					<p>
+						We can customize our tools to cater to your specific needs.
+					</p>
+				</section>
+				<span class="m_numbers">2.</span>
+				<section class="w-100 flex-md-section-27 rounded">
+					<h4>Enter shipping info</h4>
+					<p>
+						Enter your contact details and let us know if you need on-site demo. We can come and help you get started with tools.
+					</p>
+				</section>
+				<span class="m_numbers">3.</span>
+				<section class="w-100 flex-md-section-27 rounded">
+					<h4>Complete your payment</h4>
+					<p>
+						You can choose from multiple options for payments. If you are requesting for on-site demo, we have Cash on delivery option as well. 
+					</p>
+					<p>
+						There is additional cost for on-site demo and initial setup.
+					</p>
+				</section>
+			</div>
+		</div>
+		<div class="container mt-5 d-flex flex-column flex-md-row" id="analytics">
+			<div class="l_md_fourty_pc">
+				<img src="img/green.png" class="m_pie_chart" alt="Chart">
+			</div>
+			<aside class="l_md_sixty_pc">
+				<div class="m_heading_block">
+					<h2>POWERFUL INSIGHTS TO HELP GROW YOUR BUSINESS.</h2>
+					<p class="m_big_subtitle">Reports let you easily track and analyze your product sales, orders, and payments.</p>
+				</div>
+				<p>
+					Today every business is driven by data. Business is capturing data about their production, operation, customer and sales channel to gain deeper insight about their business.
+				</p>
+				<p>
+					Our business analytics tool captures and process these data to help you track your business using simple intuitive and interactive charts. 
+				</p>
+				<p>
+					Our customer engagement analytic tools help Business understand their customer well and provide recommendation using AI to strenthen the engagement.
+				</p>
+				<a href="#" class="m_learnmore">Learn more >></a>
+			</aside>
+		</div>
+		<div class="container-fluid mt-5 pb-5 d-flex flex-column justify-content-center setBackground" id="connect">
+			<div class="m_heading_block align-self-center">
+				<h2>Connect</h2>
+				<p class="m_big_subtitle">You can share your contact details and we will get in touch..</p>
+			</div>
+			<form class="form align-self-center d-flex flex-column flex-md-row">
+			  <div class="form-group mx-2 my-1 border">
+			    <label for="user_name" class="sr-only">Name</label>
+			    <input type="text" class="form-control-plaintext ml-3 font-weight-bold" id="user_name" value="Nick Jones">
+			  </div>
+			  <div class="form-group mx-2 my-1 border">
+			    <label for="user_email" class="sr-only">Email</label>
+			    <input type="text" class="form-control-plaintext ml-3 font-weight-bold" id="user_email" value="nick@example.com">
+			  </div>
+			  <button type="submit" class="btn mx-2 my-1">Send</button>
+			</form>
+		</div>
 	</div>
 	<footer class="d-flex align-items-center justify-content-center setBackground">
 		<ul class="my-3">
@@ -152,8 +159,8 @@
 	</footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>
   </body>
 </html>
